@@ -1,3 +1,7 @@
+.body
+{
+    background-color:rgb(245, 245, 245) ;
+}
 .icons{
     padding: 6px;
     background-color: rgb(245, 245, 245);
@@ -18,7 +22,7 @@
     margin-left: 12px;
     background-color: rgb(245, 245, 245);
     margin-bottom: 5px;
-    position: sticky;
+
 }
 .search1{
     position: relative;
@@ -181,4 +185,34 @@
     padding-left: 50px;
     padding-right: 25px;
     background-color:rgb(245, 245, 245) ;
+}
+
+.img3{
+    text-decoration: none;
+    color: black;
+    margin-left: 185px;
+
+}
+.img4{
+    margin-left: 200px;
+    margin-top: 200px;
+    background-color: white;
+    color:rgb(65, 65, 65) ;
+}
+.img4:hover{
+    color:rgb(65, 65, 65) ;
+    background-color:rgb(245, 245, 245) ;
+    border-radius: 50%;
+}
+.img3:hover{
+    color:rgb(65, 65, 65) ;}
+.card2{
+    padding-bottom: 150px;
+}
+.section3{
+    height: 470px;
+    background-color: white;
+}
+.section1{
+    background-color: white;
 }
