@@ -301,18 +301,6 @@ function Discover() {
     </>})}
     </div>
     </div>
-    {/* <div className="card col-5">
-    
-    <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/193546636_1458965411108586_1011652170317699649_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeE0MHdTa9cRjZQB8ql7U_H34LGxLJQkjPDgsbEslCSM8MxqAt_6lpwj1LckrhuPt20bZNbkTfrTiJ3qf4CpipF5&_nc_ohc=tJ3XttFOjKsAX9TH0uI&_nc_ht=scontent.fcai19-7.fna&oh=00_AT_Fr9wKnmxxCGS-5s09ueT9_MhxTYZzxSV3rhBDOh3aOg&oe=63730BE5"} className="card-img-top card1" alt="..."/>
-    <div className="card-body">
-      <h5 className=" font6">عصير الكتب</h5>
-      <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" className="btn btn1 col-11 font7">Join group</a>
-    </div>
-    
-    </div> */}
-    
-
     </div>
     
 );
