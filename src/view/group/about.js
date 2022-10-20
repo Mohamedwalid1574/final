@@ -12,10 +12,11 @@ import DBconnection from "../../model/network";
 import Categories from './Categories';
 import '../group/groups.css'
 import Groups from './groups';
+import newwfeed from "../group/images/newfeed.png";
 import {
   Link
 } from "react-router-dom";
-function GroupPravite(parms) {
+function About(parms) {
     const parm=useParams();
     const id=parm.id;
     const [product,setproduct]= useState({})
@@ -38,6 +39,88 @@ console.log("في error")})
   return (
 
     <div>
+        <div className="col-3 scroll section1">
+          <div>
+            <div className="d-flex">
+              <h4 className="col-10 space">Groups</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                className="icons bi bi-gear-fill"
+                viewBox="0 0 16 16"
+              >
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+              </svg>
+            </div>
+            <div className=" bora col-10 search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                className="searchIcon"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+              <input
+                type="search"
+                className="search1"
+                placeholder="Search groups"
+              />
+            </div>
+            <div>
+              <button className="button" id="btn1">
+                <img src={newwfeed} className="icons2" id="icon1" />
+                <span className="font">Your Feed</span>
+              </button>
+            </div>
+            <div>
+              <Link to="/discover">
+                <button className="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    className="icons"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
+                  </svg>
+                  <span className="font">Discover</span>
+                </button>
+              </Link>
+            </div>
+            <div>
+              <button className="button1 col-11" id="btn2">
+                <span className="font1">+ Create new group</span>
+              </button>
+            </div>
+            <div className="line1"></div>
+            <h5 className="font2">Groups you've joined</h5>
+
+            {products.map((product, index) => {
+              return (
+                <>
+                  {" "}
+                  <Link to={"products/" + product.id} className="link2">
+                    <div className="d-flex ">
+                      <img className="img1" src={product.image} />
+                      <div>
+                        <p className="font3">{product.category}</p>
+                        <span className="font4 space2">{product.category}</span>
+                      </div>
+                    </div>
+                  </Link>
+                </>
+              );
+            })}
+          </div>
+        </div>
     <div  className="text-center d-flex border-bottom pb-2" >
         <div className="col-2"></div>
      <div className=" col-8">   
@@ -48,7 +131,7 @@ console.log("في error")})
     <div className="d-flex border-bottom">
     <div className="col-3 mb-4">
     <h3>{product.category}</h3>
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" classNamw=" bi bi-bag-fill" viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" className=" bi bi-bag-fill" viewBox="0 0 16 16">
   <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
 </svg>
     <span className="font11 ms-2" >{product.category}</span>
@@ -78,14 +161,14 @@ console.log("في error")})
     </div>
     <div className="col-12 d-flex">
     <div className="col-3 me-5 mt-3">
-    <Link className="link2" to={"/aboutgroup/"+product.id}><span className="opacity-80 ms-1 font7 color2">About</span></Link>
-                  <Link className="link2" to={"/discussiongroup/"+product.id}><span className="opacity-80 me-3 font7 ">
+    <Link className="link2" to={"/about/"+product.id}><span className="opacity-80 ms-1 font7 color2">About</span></Link>
+                  <Link className="link2" to={"/discussion/"+product.id}><span className="opacity-80 me-3 font7 ">
                     Discussion
                   </span></Link>
-                  <Link className="link2" to={"/featuregroup/"+product.id}><span className="opacity-80 me-3 font7">Featured</span></Link>
-                  <Link className="link2" to={"/peoplegroup/"+product.id}><span className="opacity-80 me-3 font7 ">People</span></Link>
-                  <Link className="link2" to={"/mediagroup/"+product.id}><span className="opacity-80 me-3 font7 ">Media</span></Link>
-                  <Link className="link2" to={"/filesgroup/"+product.id}><span className="opacity-80 me-3 font7 ">Files</span></Link></div>
+                  <Link className="link2" to={"/feature/"+product.id}><span className="opacity-80 me-3 font7">Featured</span></Link>
+                  <Link className="link2" to={"/people/"+product.id}><span className="opacity-80 me-3 font7 ">People</span></Link>
+                  <Link className="link2" to={"/media/"+product.id}><span className="opacity-80 me-3 font7 ">Media</span></Link>
+                  <Link className="link2" to={"/files/"+product.id}><span className="opacity-80 me-3 font7 ">Files</span></Link></div>
      <div className="col-6"></div>
      <div className="col-4 mt-3">
      <svg
@@ -237,4 +320,4 @@ console.log("في error")})
   );
 }
 
-export default GroupPravite;
+export default About;

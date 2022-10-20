@@ -18,7 +18,7 @@
     border: 0;
     border-radius: 20px;
     margin-left: 12px;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(235, 235, 235);
     margin-bottom: 5px;
 
 }
@@ -27,7 +27,7 @@
     height: 35px;
     border: 0;
     border-radius: 20px;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(235, 235, 235);
 }
 
 .searchIcon{
@@ -267,7 +267,7 @@
 }
 .icons3{
     padding: 5px 10px;
-    background-color: lightgray;
+    background-color: rgb(228, 226, 226);
     border-radius: 3px;
     
 }
@@ -282,4 +282,33 @@
 .img6{
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+}
+#btn1{
+    background-color: rgb(245, 245, 245);
+}
+#icon1{
+    background-color: #3e88e9;
+}
+#btn2{
+    background-color: rgb(245, 245, 245);
+}
+#icon2{
+    background-color: #3e88e9;
+}
+.color2{
+    color: rgb(248, 44, 122);
+    border-bottom: 2px solid rgb(248, 44, 122);
+    padding-bottom: 20px;
+}
+.button2{
+    background-color: rgb(228, 226, 226);
+    color: black;
+    font-weight: 700;
+    border-radius: 3px;
+    border: 0;
+    padding: 3px 20px;
+}
+.img7{
+    height: 400px;
 }

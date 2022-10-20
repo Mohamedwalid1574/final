@@ -9,7 +9,7 @@ import {
     Link
   } from "react-router-dom";
 
-function Discover() {
+function Discover(prams) {
     const [products ,setproducts]= useState([])
     useEffect(()=>{DBconnection.get("products").then((res)=>
     {console.log (res.data)
@@ -36,12 +36,12 @@ function Discover() {
   <input type="search" className="search1" placeholder="Search groups"/>
 </div>
 <div>
-    <Link to='/group' className="link2"><button className="button" id="btn1" onClick={()=>{document.getElementById("icon1").style.backgroundColor="#1870e2" ;document.getElementById("btn1").style.backgroundColor="rgb(245, 245, 245)"}}>
-    <img src={newwfeed} className="icons2" id="icon1"/>
+    <Link to='/feed' className="link2"><button className="button">
+    <img src={newwfeed} className="icons2"/>
     <span className="font">Your Feed</span></button></Link>
 </div>
 <div>
-    <button className="button" id="btn2" onClick={()=>{document.getElementById("icon2").style.backgroundColor="#1870e2" ;document.getElementById("btn2").style.backgroundColor="rgb(245, 245, 245)"}}>
+    <button className="button" id="btn2" >
     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="icons" id="icon2" viewBox="0 0 16 16">
   <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
   <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
@@ -55,14 +55,14 @@ function Discover() {
 <div className="line1"></div>
 <h5 className="font2">Groups you've joined</h5>
 
-    {products.map((product,index)=>{return <> <div className="d-flex ">
+    {products.map((product,index)=>{return <> <Link to={"/discussion/"+product.id} className="link2"><div className="d-flex ">
      <img className="img1" src={product.image}/>  
      <div>
     <p className="font3">{product.category}</p>
     <span className="font4 space2">{product.category}</span>
 
     </div> 
-    </div></>})}</div>
+    </div></Link></>})}</div>
     </div>
     <div className="col-9 ms-5 section3 bg-light">
         
@@ -268,7 +268,7 @@ function Discover() {
 <h4 className="font9">More suggestions</h4>
     
     {products.map((product,index)=>{return <>
-        <Link to ={"private/"+product.id} key={index} className="link2"><div className="d-inline-flex col-5 m-2" >
+        <Link to ={"/aboutgroup/"+product.id} key={index} className="link2"><div className="d-inline-flex col-5 m-2" >
                 <div className="card col-12 ">
      
                     <img className="card-img-top card1" src={product.image}/>  

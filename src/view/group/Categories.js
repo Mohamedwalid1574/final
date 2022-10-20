@@ -38,7 +38,7 @@ function Categories(parms) {
 <h4 className="font9">Popular near you</h4>
     {products.map((product,index)=>{return <>
         
-                <Link to ={"products/"+product.id} key={index} className="link2"><div className="d-inline-flex col-5 m-2" >
+                <Link to ={"/about/"+product.id} key={index} className="link2"><div className="d-inline-flex col-5 m-2" >
                 <div className="card col-12 ">
      
                     <img className="card-img-top card1" src={product.image}/>  
