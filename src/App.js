@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import './App.css';
 import Groups from './view/group/groups';
 import Discover from './view/group/discover';
@@ -15,6 +16,7 @@ import {
 function App() {
   let {id}= useParams();
   return (
+
     <>
     <Router>
     <Routes>
@@ -27,6 +29,7 @@ function App() {
       </Routes>
     </Router>
     </>
+
   );
 
 }
