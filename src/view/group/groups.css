@@ -1,0 +1,245 @@
+.body
+{
+    overflow-x:hidden;
+}
+.icons{
+    padding: 6px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 50%;
+}
+.space{
+    
+    margin-left: 15px;
+    font-weight: 700;
+}
+.search{
+    padding-left: 15px;
+    height: 35px;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 12px;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 5px;
+
+}
+.search1{
+    padding-left: 10px;
+    height: 35px;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.searchIcon{
+    position: relative;
+    margin-bottom: 2px;
+    z-index: 2;
+    
+}
+.bora{
+    border-radius: 20px;
+}
+.button{
+    width: 330px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 7px;
+    text-align: start;
+    padding-left: 3px;
+    margin-left: 12px;
+    background-color: white;
+}
+.button:hover{
+    width: 330px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 7px;
+    text-align: start;
+    padding-left: 3px;
+    margin-left: 12px;
+    background-color: rgb(245, 245, 245);
+    
+}
+.icons2{
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+    width: 35px;
+    height: 35px;
+}
+
+.font{
+    padding: 0;
+    margin-left: 10px;
+    font-weight: 500;
+} 
+.font1{
+    padding: 0;
+    margin-left: 10px;
+    font-weight: 500;
+    color: #3e88e9;
+} 
+.button1{
+    
+    height: 33px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 7px;
+    text-align: center;
+    margin-left: 12px;
+    background-color: #d6f0ff;
+}
+.button1:hover{
+   
+    height: 33px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 7px;
+    text-align: center;
+    margin-left: 12px;
+    background-color: #d0e8f5;
+    
+}
+.line1{
+    border-bottom: 1px solid lightgray;
+    width: 300px;
+    margin-left: 12px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+.font2{
+    opacity: 0.97;
+    font-size: 18px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+.font3{
+    opacity: 0.97;
+    font-size: 15px;
+    margin-left: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+    
+}
+.img1{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+.space2{
+    padding-bottom: 10px;
+}
+.font4{
+    font-size: 14px;
+    opacity: 0.96;
+    font-weight: 400;
+    margin-left: 12px;
+}
+.font5{
+    font-size: 15px;
+    opacity: 0.85;
+    font-weight: 400;
+    margin-left: 12px;
+    margin-top:0;
+}
+.font6{
+    opacity: 0.97;
+    font-size: 18px;
+    margin-left: 12px;
+    margin-bottom: 2px;
+}
+.scroll{
+    overflow-y:scroll;
+    height: 780px;
+}
+.link{
+    font-size: 15px;
+    opacity: 0.96;
+    font-weight: 400;
+    color: #3e88e9;
+    text-decoration: none;
+}
+.card1{
+    height: 250px;
+    border-bottom: 1px solid lightgray;
+}
+.font7{
+    font-weight: 600;
+    margin-left: 12px;
+}
+.font8{
+    opacity: 0.85;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.space3
+{
+    padding-left: 50px;
+    padding-right: 25px;
+    background-color:rgb(245, 245, 245) ;
+}
+
+.img3{
+    text-decoration: none;
+    color: black;
+    margin-left: 185px;
+
+}
+.img4{
+    margin-left: 200px;
+    margin-top: 200px;
+    background-color: white;
+    color:rgb(65, 65, 65) ;
+    border-radius: 50%;
+}
+.img4:hover{
+    color:rgb(65, 65, 65) ;
+    background-color:rgb(245, 245, 245) ;
+    border-radius: 50%;
+}
+.img3:hover{
+    color:rgb(65, 65, 65) ;}
+.card2{
+    padding-bottom: 150px;
+}
+.section3{
+    height: 470px;
+    background-color: white;
+}
+.section1{
+    background-color: white;
+}
+.space4{
+    margin-right: 5px;
+}
+.border1
+{
+    border: 0;
+}
+.btn1{
+    background-color: rgb(224, 224, 224) ;
+}
+.btn1:hover{
+    background-color: lightgray;
+}
+.font9{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+}
+.font10{
+    opacity: 0.97;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.bb{
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
