@@ -1,6 +1,6 @@
 .body
 {
-    background-color:rgb(245, 245, 245) ;
+    overflow-x:hidden;
 }
 .icons{
     padding: 6px;
@@ -198,6 +198,7 @@
     margin-top: 200px;
     background-color: white;
     color:rgb(65, 65, 65) ;
+    border-radius: 50%;
 }
 .img4:hover{
     color:rgb(65, 65, 65) ;
@@ -215,4 +216,33 @@
 }
 .section1{
     background-color: white;
+}
+.space4{
+    margin-right: 5px;
+}
+.border1
+{
+    border: 0;
+}
+.btn1{
+    background-color: rgb(224, 224, 224) ;
+}
+.btn1:hover{
+    background-color: lightgray;
+}
+.font9{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+}
+.font10{
+    opacity: 0.97;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.bb{
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }

@@ -9,7 +9,7 @@ import Form from 'react-bootstrap/Form';
 import newwfeed from "./images/newfeed.png"
 import { color } from "@mui/system";
 import 'bootstrap/dist/js/bootstrap.bundle.js'
-import Discover from './discover';
+
 
 
 function Discover() {
@@ -23,7 +23,7 @@ function Discover() {
   },[])
 
     return ( 
-        <div className="body">
+        <div className="bg-light body">
         <div className="d-flex">
     <div className="col-3 scroll section1">
      <div >
@@ -67,8 +67,254 @@ function Discover() {
     </div> 
     </div></>})}</div>
     </div>
+    <div className="col-9 ms-5 section3 bg-light">
+        
+      <div className="d-flex col-9">
+        
+        <div className="col-10">
+        <h5 className="font9">Popular near you</h5>
+        <p className="font10">Groups people in your area are in</p>
+        </div>
+        <a href="/" className="link ms-5">See more</a>
+
+
+  </div>
+
+<div id="demo" className="carousel slide " data-bs-ride="carousel">
+
+  <div className="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" ></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" ></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3" ></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4" ></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5" ></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="6" ></button>
+    
+    
+  </div>
+
+    <div className="carousel-inner">
+    <div className="carousel-item active col-5 bg-light">
+    <div className="container">
+            <div className="row ">
+   <div className="card col-5">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  <div className="card col-5 ms-3">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  </div>
+    </div>
+  </div>
+    <div className="carousel-item  bg-light">
+    
+    <div className="container">
+            <div className="row ">
+   <div className="card col-5 space4">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  <div className="card col-5 ms-3">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  </div>
+    </div>
+  
+      </div> 
+      <div className="carousel-item  bg-light">
+    
+    <div className="container">
+            <div className="row ">
+   <div className="card col-5 space4">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  <div className="card col-5 ms-3">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  </div>
+    </div>
+  
+      </div> 
+      <div className="carousel-item  bg-light">
+    
+    <div className="container">
+            <div className="row ">
+   <div className="card col-5 space4">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  <div className="card col-5 ms-3">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  </div>
+    </div>
+  
+      </div> 
+      <div className="carousel-item  bg-light">
+    
+    <div className="container">
+            <div className="row ">
+   <div className="card col-5 space4">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  <div className="card col-5 ms-3">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  </div>
+    </div>
+  
+      </div>   
+    <div className="carousel-item  bg-light">
+    <div className="container">
+            <div className="row ">
+   <div className="card col-5 space4">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  <div className="card col-5 ms-3">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>
+  </div>
     </div>
     </div>
+    <div className="carousel-item  bg-light">
+    <div className="container">
+            <div className="row ">
+   <div className="card col-5">
+  <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/175810105_3713542632074658_2500379176738270685_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeEZatUzXZeuowem61MQpWR675_rtcYgrPDvn-u1xiCs8M9xYdW4wcSDk2u-Mmy9z3Su9MC5bf8QczAtalyGaYJI&_nc_ohc=O8-A1GT3rZEAX9aaz0y&_nc_ht=scontent.fcai19-7.fna&oh=00_AT9Sfma0teY3-XkvZGetCAo5bxnlaTzE3P7sQAEC1da-vg&oe=63754ACD"} className="card-img-top card1" alt="..."/>
+  <div className="card-body">
+    <h5 className=" font6">FWD Web Development participants</h5>
+    <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn1 col-11 font7">Join group</a>
+  </div>
+  </div>  
+  <div className="card col-5 bg-light border1">
+    <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="img4 bi bi-arrow-right-circle " viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg></a>
+  <div className="card2">
+    <a className="img3" href="/">see more</a>
+  </div>
+  </div>
+    </div>
+</div>
+</div>
+</div>
+
+  <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon"></span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span className="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div className="bb"></div>
+<h4 className="font9">More suggestions</h4>
+    
+    {products.map((product,index)=>{return <>
+        <div className="container bg-light">
+            <div className="row">
+                
+                <div className="card col-5 mb-3 space4">
+     
+                    <img className="card-img-top card1" src={product.image}/>  
+                    <div className="card-body">
+                        <h5 className="font6">{product.category}</h5>
+                        <p className="font5">{product.category}</p>
+                        <a href="#" className="btn btn1 col-11 font7">Join group</a>
+                    </div> 
+                </div>
+                
+                
+                <div className="card col-5 mb-3 ms-3">
+     
+                    <img className="card-img-top card1" src={product.image}/>  
+                    <div className="card-body">
+                        <h5 className="font6">{product.category}</h5>
+                        <p className="font5">{product.category}</p>
+                        <a href="#" className="btn btn1 col-11 font7">Join group</a>
+                    </div> 
+                </div>
+              
+    
+            </div>
+        </div>  
+    </>})}
+    </div>
+    </div>
+    {/* <div className="card col-5">
+    
+    <img src={"https://scontent.fcai19-7.fna.fbcdn.net/v/t1.6435-9/193546636_1458965411108586_1011652170317699649_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeE0MHdTa9cRjZQB8ql7U_H34LGxLJQkjPDgsbEslCSM8MxqAt_6lpwj1LckrhuPt20bZNbkTfrTiJ3qf4CpipF5&_nc_ohc=tJ3XttFOjKsAX9TH0uI&_nc_ht=scontent.fcai19-7.fna&oh=00_AT_Fr9wKnmxxCGS-5s09ueT9_MhxTYZzxSV3rhBDOh3aOg&oe=63730BE5"} className="card-img-top card1" alt="..."/>
+    <div className="card-body">
+      <h5 className=" font6">عصير الكتب</h5>
+      <p className="font5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" className="btn btn1 col-11 font7">Join group</a>
+    </div>
+    
+    </div> */}
+    
+
+    </div>
+    
 );
     }
 export default Discover;
