@@ -1,16 +1,13 @@
 import DBconnection from "../../model/network";
 import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 import './groups.css'
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import Icon from '@mui/material/Icon';
-import Form from 'react-bootstrap/Form';
 import newwfeed from "./images/newfeed.png"
-import { color } from "@mui/system";
 import 'bootstrap/dist/js/bootstrap.bundle.js'
 
-
+import {
+    Link
+  } from "react-router-dom";
 
 function Discover() {
     const [products ,setproducts]= useState([])
@@ -39,9 +36,9 @@ function Discover() {
   <input type="search" className="search1" placeholder="Search groups"/>
 </div>
 <div>
-    <button className="button" id="btn1" onClick={()=>{document.getElementById("icon1").style.backgroundColor="#1870e2" ;document.getElementById("btn1").style.backgroundColor="rgb(245, 245, 245)"}}>
+    <Link to='/group' className="link2"><button className="button" id="btn1" onClick={()=>{document.getElementById("icon1").style.backgroundColor="#1870e2" ;document.getElementById("btn1").style.backgroundColor="rgb(245, 245, 245)"}}>
     <img src={newwfeed} className="icons2" id="icon1"/>
-    <span className="font">Your Feed</span></button>
+    <span className="font">Your Feed</span></button></Link>
 </div>
 <div>
     <button className="button" id="btn2" onClick={()=>{document.getElementById("icon2").style.backgroundColor="#1870e2" ;document.getElementById("btn2").style.backgroundColor="rgb(245, 245, 245)"}}>
@@ -75,7 +72,7 @@ function Discover() {
         <h5 className="font9">Popular near you</h5>
         <p className="font10">Groups people in your area are in</p>
         </div>
-        <a href="/" className="link ms-5">See more</a>
+        <a href="/seemore" className="link ms-5">See more</a>
 
 
   </div>
@@ -271,33 +268,22 @@ function Discover() {
 <h4 className="font9">More suggestions</h4>
     
     {products.map((product,index)=>{return <>
-        <div className="container bg-light">
-            <div className="row">
-                
-                <div className="card col-5 mb-3 space4">
+        <Link to ={"groupPage/"+product.id} key={index} className="link2"><div className="d-inline-flex col-5 m-2" >
+                <div className="card col-12 ">
      
                     <img className="card-img-top card1" src={product.image}/>  
                     <div className="card-body">
-                        <h5 className="font6">{product.category}</h5>
+                        <h5 className="font6 ">{product.category}</h5>
                         <p className="font5">{product.category}</p>
                         <a href="#" className="btn btn1 col-11 font7">Join group</a>
                     </div> 
                 </div>
-                
-                
-                <div className="card col-5 mb-3 ms-3">
-     
-                    <img className="card-img-top card1" src={product.image}/>  
-                    <div className="card-body">
-                        <h5 className="font6">{product.category}</h5>
-                        <p className="font5">{product.category}</p>
-                        <a href="#" className="btn btn1 col-11 font7">Join group</a>
-                    </div> 
                 </div>
+                </Link>
+              
               
     
-            </div>
-        </div>  
+              
     </>})}
     </div>
     </div>

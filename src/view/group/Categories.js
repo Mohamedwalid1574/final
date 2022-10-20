@@ -1,15 +1,12 @@
 import DBconnection from "../../model/network";
 import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 import './groups.css'
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import Icon from '@mui/material/Icon';
-import Form from 'react-bootstrap/Form';
-import newwfeed from "./images/newfeed.png";
 import 'bootstrap/dist/js/bootstrap.bundle.js';
-
-function Categories() {
+import {
+    Link,useParams
+  } from "react-router-dom";
+function Categories(parms) {
     const [products ,setproducts]= useState([])
     useEffect(()=>{DBconnection.get("products").then((res)=>
     {console.log (res.data)
@@ -21,7 +18,7 @@ function Categories() {
 
     return ( 
         <div className="bg-light">
-        <div className="d-flex">
+        <div className="d-flex ">
     <div className="col-3  section1">
      <div>
         <div className="d-flex"><h4 className="col-10 space">Categories</h4>
@@ -39,41 +36,27 @@ function Categories() {
     </div>
     <div className="col-9 ms-5 section3 bg-light">
 <h4 className="font9">Popular near you</h4>
-    
     {products.map((product,index)=>{return <>
-        <div className="container bg-light">
-            <div className="row">
-                
-                <div className="card col-5 mb-3 space4">
+        
+                <Link to ={"products/"+product.id} key={index} className="link2"><div className="d-inline-flex col-5 m-2" >
+                <div className="card col-12 ">
      
                     <img className="card-img-top card1" src={product.image}/>  
                     <div className="card-body">
-                        <h5 className="font6">{product.category}</h5>
+                        <h5 className="font6 ">{product.category}</h5>
                         <p className="font5">{product.category}</p>
                         <a href="#" className="btn btn1 col-11 font7">Join group</a>
                     </div> 
                 </div>
-                
-                
-                <div className="card col-5 mb-3 ms-3">
-     
-                    <img className="card-img-top card1" src={product.image}/>  
-                    <div className="card-body">
-                        <h5 className="font6">{product.category}</h5>
-                        <p className="font5">{product.category}</p>
-                        <a href="#" className="btn btn1 col-11 font7">Join group</a>
-                    </div> 
                 </div>
+                </Link>
               
     
-            </div>
-        </div>  
+            
     </>})}
     </div>
     </div>
     </div>
-    
-    
 );
     }
 export default Categories;

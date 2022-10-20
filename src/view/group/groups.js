@@ -3,15 +3,14 @@ import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 import './groups.css'
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import Icon from '@mui/material/Icon';
-import Form from 'react-bootstrap/Form';
 import newwfeed from "./images/newfeed.png"
 import { color } from "@mui/system";
 import 'bootstrap/dist/js/bootstrap.bundle.js'
 
-
-function Groups() {
+import {
+  Link
+} from "react-router-dom";
+function Groups(prams) {
     const [products ,setproducts]= useState([])
     useEffect(()=>{DBconnection.get("products").then((res)=>
     {console.log (res.data)
@@ -43,12 +42,12 @@ function Groups() {
     <span className="font">Your Feed</span></button>
 </div>
 <div>
-    <button className="button" id="btn2" onClick={()=>{document.getElementById("icon2").style.backgroundColor="#1870e2" ;document.getElementById("btn2").style.backgroundColor="rgb(245, 245, 245)"}}>
+    <Link to="/discover"><button className="button" id="btn2" onClick={()=>{document.getElementById("icon2").style.backgroundColor="#1870e2" ;document.getElementById("btn2").style.backgroundColor="rgb(245, 245, 245)"}}>
     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="icons" id="icon2" viewBox="0 0 16 16">
   <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
   <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
 </svg>
-    <span className="font">Discover</span></button>
+    <span className="font">Discover</span></button></Link>
 </div>
 <div>
     <button className="button1 col-11" id="btn2">
@@ -57,14 +56,14 @@ function Groups() {
 <div className="line1"></div>
 <h5 className="font2">Groups you've joined</h5>
 
-    {products.map((product,index)=>{return <> <div className="d-flex ">
+    {products.map((product,index)=>{return <> <Link to={"products/"+product.id} className="link2"><div className="d-flex ">
      <img className="img1" src={product.image}/>  
      <div>
     <p className="font3">{product.category}</p>
     <span className="font4 space2">{product.category}</span>
 
     </div> 
-    </div></>})}</div>
+    </div></Link></>})}</div>
     </div>
     {/* <div className="col-1"></div> */}
     <div className="col-5 space3">
@@ -84,7 +83,7 @@ function Groups() {
         <h5 className="font6">Suggested for you</h5>
         <p className="font5">Groups you might be interested in.</p>
         </div>
-        <a href="/" className="link ">See more</a>
+        <a href="/seemore" className="link ">See more</a>
 </div>
 
   
