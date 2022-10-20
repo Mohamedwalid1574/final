@@ -9,7 +9,7 @@ import Form from 'react-bootstrap/Form';
 import newwfeed from "./images/newfeed.png";
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-function More() {
+function Categories() {
     const [products ,setproducts]= useState([])
     useEffect(()=>{DBconnection.get("products").then((res)=>
     {console.log (res.data)
@@ -76,4 +76,4 @@ function More() {
     
 );
     }
-export default More;
+export default Categories;
