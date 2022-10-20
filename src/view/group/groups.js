@@ -6,7 +6,6 @@ import './groups.css'
 import newwfeed from "./images/newfeed.png"
 import { color } from "@mui/system";
 import 'bootstrap/dist/js/bootstrap.bundle.js'
-
 import {
   Link
 } from "react-router-dom";
